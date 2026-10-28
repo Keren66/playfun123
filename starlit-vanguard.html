@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starlit Vanguard — Play Fun</title>
+<meta name="description" content="Starlit Vanguard — a turn-based mecha tactics RPG for iOS, Android and Steam. Play Fun Pte. Ltd., Singapore.">
+<link rel="canonical" href="https://playfun123.com/starlit-vanguard.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Play Fun">
+<meta property="og:title" content="Starlit Vanguard">
+<meta property="og:description" content="Starlit Vanguard — a turn-based mecha tactics RPG for iOS, Android and Steam. Play Fun Pte. Ltd., Singapore.">
+<meta property="og:url" content="https://playfun123.com/starlit-vanguard.html">
+<meta property="og:image" content="https://playfun123.com/assets/banner-starlit.webp">
+<meta name="theme-color" content="#FFC400">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg class="icon-sprite" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-play" viewBox="0 0 14 16"><path d="M2 2.2c0-.8.9-1.3 1.6-.9l8.2 5.1c.7.4.7 1.4 0 1.8l-8.2 5.1c-.7.4-1.6-.1-1.6-.9V2.2z"/></symbol>
+  <symbol id="i-apple" viewBox="0 0 20 22"><path d="M15.6 12.1c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.3-.9-1.7 0-3.2 1-4.1 2.5-1.7 3-.4 7.4 1.3 9.8.8 1.2 1.8 2.5 3.1 2.4 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.4 0 2.2-1.2 3-2.4.7-1 1.1-2 1.4-2.8-.1 0-2.4-1-2.4-3.6zM13.2 4.6c.7-.8 1.2-2 1-3.1-1 0-2.3.7-3 1.5-.7.8-1.3 2-1.1 3.1 1.2.1 2.4-.6 3.1-1.5z"/></symbol>
+  <symbol id="i-gplay" viewBox="0 0 20 22"><path d="M2.6 1.7c-.3.3-.5.8-.5 1.4v15.8c0 .6.2 1.1.5 1.4l.1.1 8.8-8.8v-.2L2.6 1.7z"/><path d="M14.4 14.7 11.6 12v-.2l2.8-2.7 3.4 1.9c1 .6 1 1.5 0 2.1l-3.4 1.6z" opacity=".85"/><path d="M14.4 14.7 11.6 12 2.6 20.9c.4.3.9.3 1.5 0l10.3-6.2" opacity=".7"/><path d="M14.4 7.3 4.1 1.1c-.6-.3-1.1-.3-1.5 0l9 9 2.8-2.8z" opacity=".6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 20 17"><path d="M1 8.5h18M13 1.5l6 7-6 7"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 13 21"><path d="M2 2l9 8.5-9 8.5"/></symbol>
+</svg>
+
+<svg class="icon-sprite" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.4"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.4M12 18.6V21M3 12h2.4M18.6 12H21M5.7 5.7l1.7 1.7M16.6 16.6l1.7 1.7M18.3 5.7l-1.7 1.7M7.4 16.6l-1.7 1.7"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M9.5 14.5l5-5"/><path d="M11 6.6l1.5-1.5a4 4 0 015.7 5.7L16.7 12"/><path d="M13 17.4l-1.5 1.5a4 4 0 01-5.7-5.7L7.3 12"/></symbol>
+<symbol id="i-blade" viewBox="0 0 24 24"><path d="M14 3.2l6.2 1.1-1.1 6.2L10 19.4l-4.6 1.1 1.1-4.6z"/><path d="M5.4 20.5l3.4-3.4"/></symbol>
+<symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 16a8 8 0 1116 0"/><path d="M12 16l4.6-4.2"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M4 6.2l5-2 6 2 5-2v13.6l-5 2-6-2-5 2z"/><path d="M9 4.2v13.6M15 6.2v13.6"/></symbol>
+<symbol id="i-deck" viewBox="0 0 24 24"><rect x="4" y="6.4" width="9.6" height="13.8" rx="1.6"/><path d="M9.2 3.4h8.2a2 2 0 012 2v11.8"/></symbol>
+<symbol id="i-contract" viewBox="0 0 24 24"><path d="M6.2 3.4h8.6l4 4v13.2H6.2z"/><path d="M14.4 3.4v4.4h4.4"/><path d="M9.2 13h6.6M9.2 16.6h4.6"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.2v5.4l3.8 2"/></symbol></svg>
+
+
+<header class="header">
+  <div class="header-container">
+    <a class="logo" href="index.html" aria-label="Play Fun home">
+      <span class="logo-mark"><svg><use href="#i-play"/></svg></span>
+      <span class="logo-word">PLAY<span>FUN</span></span>
+    </a>
+    <nav class="navigation" aria-label="Main">
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="index.html#careers">Careers</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="ts-hero" aria-label="Starlit Vanguard key art">
+    <img class="ts-cover" src="assets/banner-starlit.webp" alt="Three pilots launching from a space carrier into a nebula">
+    <p class="ts-logo">STARLIT VANGUARD</p>
+  </section>
+
+
+  <section class="ts-intro">
+    <div>
+      <p class="ts-tag">Tactical mecha RPG</p>
+      <h1 class="ts-title">Starlit Vanguard</h1>
+      <p>Starlit Vanguard is a turn-based tactics RPG about a squadron of pilots holding a star system together after its sun began to fail. You command three frames at a time, and every fight is decided by where you stand — not by how long you grind.</p>
+      <p>Build a squad from twenty pilots, refit their frames between sorties, and carry the consequences of each mission into the next chapter.</p>
+      
+        <div class="app-buttons">
+          <a class="store-badge" href="https://apps.apple.com/search?term=Play%20Fun" target="_blank" rel="noopener">
+            <svg><use href="#i-apple"/></svg>
+            <span class="sb-text"><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a class="store-badge" href="https://play.google.com/store/search?q=Play%20Fun&amp;c=apps" target="_blank" rel="noopener">
+            <svg><use href="#i-gplay"/></svg>
+            <span class="sb-text"><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+
+    </div>
+  </section>
+
+
+  <section class="ts-band screentone">
+    <div>
+      <h2>Meet the squad</h2>
+      <p>Three pilots, one carrier, and no reinforcements coming.</p>
+    </div>
+  </section>
+
+  <section class="ts-section">
+    <div class="ts-grid ts-grid-3">
+      <figure class="ts-card">
+        <img src="assets/cast-starlit-1.webp" alt="Rei Amamiya" loading="lazy">
+        <h3>Rei Amamiya</h3>
+        <p>Squad leader. Seventeen, three confirmed kills before her first promotion, and the only pilot who reads the whole briefing. Flies the frame nobody else will.</p>
+      </figure>
+      <figure class="ts-card">
+        <img src="assets/cast-starlit-2.webp" alt="Haru Kudo" loading="lazy">
+        <h3>Haru Kudo</h3>
+        <p>Mechanic. Keeps eleven frames in the air with a wrench and a strong opinion about replacement parts. The reason your mech survives the mission you should not have taken.</p>
+      </figure>
+      <figure class="ts-card">
+        <img src="assets/cast-starlit-3.webp" alt="Nova" loading="lazy">
+        <h3>Nova</h3>
+        <p>The squad's tactical core in a body that looks eighteen. Calculates the odds out loud, which nobody asked for, and is usually right, which nobody enjoys.</p>
+      </figure>
+    </div>
+  </section>
+
+
+  <section class="ts-band screentone">
+    <div>
+      <h2>Core gameplay</h2>
+      <p>Move, break line of sight, and win the turn before the shooting starts.</p>
+    </div>
+  </section>
+
+  <section class="ts-section">
+    <div class="ts-grid ts-grid-3">
+      <article class="ts-card is-text">
+        <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-target"/></svg>
+        <h3>Positioning</h3>
+        <p>Cover, elevation and facing decide the fight. Break line of sight and the enemy spends its whole turn walking to you.</p>
+      </article>
+      <article class="ts-card is-text">
+        <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-gear"/></svg>
+        <h3>Frame loadout</h3>
+        <p>Every frame carries three hardpoints. Swap weapons between sorties instead of unlocking a bigger number.</p>
+      </article>
+      <article class="ts-card is-text">
+        <svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-link"/></svg>
+        <h3>Command link</h3>
+        <p>Spend your action to hand it to a squadmate. Chain three commands in one turn and the last one lands twice as hard.</p>
+      </article>
+    </div>
+  </section>
+
+
+  <section class="ts-band screentone">
+    <div>
+      <h2>Live events</h2>
+      <p>A new operation every two weeks, and a season that changes the map.</p>
+    </div>
+  </section>
+
+  <section class="ts-section">
+    <div class="ts-grid ts-grid-4">
+      <figure class="ts-tile">
+        <figcaption>Tower Streak</figcaption>
+        <span>Season</span>
+      </figure>
+      <figure class="ts-tile">
+        <figcaption>Deep Orbit</figcaption>
+        <span>Co-op raid</span>
+      </figure>
+      <figure class="ts-tile">
+        <figcaption>Signal Lost</figcaption>
+        <span>Story</span>
+      </figure>
+      <figure class="ts-tile">
+        <figcaption>Salvage Run</figcaption>
+        <span>Weekly</span>
+      </figure>
+      <figure class="ts-tile">
+        <figcaption>Ace Trials</figcaption>
+        <span>Ranked</span>
+      </figure>
+      <figure class="ts-tile">
+        <figcaption>Black Sun</figcaption>
+        <span>Boss</span>
+      </figure>
+      <figure class="ts-tile">
+        <figcaption>Frame Fair</figcaption>
+        <span>Store</span>
+      </figure>
+      <figure class="ts-tile">
+        <figcaption>Wing Muster</figcaption>
+        <span>Guild</span>
+      </figure>
+    </div>
+  </section>
+
+
+  <section class="ts-band screentone">
+    <div>
+      <h2>Reviews</h2>
+      <p>What players said after the first season.</p>
+    </div>
+  </section>
+
+  <section class="ts-section">
+    <div class="ts-carousel">
+      <button class="ts-carousel-btn prev" type="button" aria-label="Previous reviews">
+        <svg><use href="#i-chev"/></svg>
+      </button>
+      <div class="ts-carousel-track">
+        <blockquote class="ts-review">
+          <div class="ts-review-head">
+            <h3>Mika T.</h3>
+            <p class="ts-stars" aria-label="Rated 5 out of 5"><span aria-hidden="true">★★★★★</span></p>
+          </div>
+          <p>The first tactics game on my phone where losing felt like my own fault. Took me three tries to stop rushing the ridge.</p>
+        </blockquote>
+        <blockquote class="ts-review">
+          <div class="ts-review-head">
+            <h3>D. Okafor</h3>
+            <p class="ts-stars" aria-label="Rated 5 out of 5"><span aria-hidden="true">★★★★★</span></p>
+          </div>
+          <p>Frame loadouts are the whole game for me. I rebuilt the same mech six ways and it plays like six different units.</p>
+        </blockquote>
+        <blockquote class="ts-review">
+          <div class="ts-review-head">
+            <h3>ruri_99</h3>
+            <p class="ts-stars" aria-label="Rated 5 out of 5"><span aria-hidden="true">★★★★★</span></p>
+          </div>
+          <p>Nova's dialogue is the best thing in it. Someone on that team has read a tactics script before.</p>
+        </blockquote>
+        <blockquote class="ts-review">
+          <div class="ts-review-head">
+            <h3>Marco B.</h3>
+            <p class="ts-stars" aria-label="Rated 5 out of 5"><span aria-hidden="true">★★★★★</span></p>
+          </div>
+          <p>No energy timers, no ads mid-mission. I finished the campaign on a flight and it never once asked me for a gem.</p>
+        </blockquote>
+        <blockquote class="ts-review">
+          <div class="ts-review-head">
+            <h3>SquadSix</h3>
+            <p class="ts-stars" aria-label="Rated 5 out of 5"><span aria-hidden="true">★★★★★</span></p>
+          </div>
+          <p>Chapter four, convoy mission. That's it. That's the review.</p>
+        </blockquote>
+      </div>
+      <button class="ts-carousel-btn next" type="button" aria-label="More reviews">
+        <svg><use href="#i-chev"/></svg>
+      </button>
+    </div>
+  </section>
+
+
+  <section class="ts-band screentone">
+    <div>
+      <h2>FAQs</h2>
+    </div>
+  </section>
+
+  <section class="ts-section">
+    <div class="ts-faq">
+      <details>
+        <summary><h3>Is Starlit Vanguard free to play?</h3><svg class="chevron"><use href="#i-chev"/></svg></summary>
+        <div class="ts-faq-answer"><p>Yes. Campaign chapters, story missions and ranked are free. Frames, weapon modules and cosmetics are sold in the store, and no campaign mission requires them.</p></div>
+      </details>
+      <details>
+        <summary><h3>Do I need an internet connection?</h3><svg class="chevron"><use href="#i-chev"/></svg></summary>
+        <div class="ts-faq-answer"><p>Campaign chapters download once and then play offline. Ranked, co-op raids and live events need a connection.</p></div>
+      </details>
+      <details>
+        <summary><h3>Which platforms does it run on?</h3><svg class="chevron"><use href="#i-chev"/></svg></summary>
+        <div class="ts-faq-answer"><p>iOS 15 and later, Android 9 and later, and Windows through Steam. One account carries progress across all three.</p></div>
+      </details>
+      <details>
+        <summary><h3>How big is the download?</h3><svg class="chevron"><use href="#i-chev"/></svg></summary>
+        <div class="ts-faq-answer"><p>About 3.2 GB on mobile once the art packs are in; the base install is 1.1 GB.</p></div>
+      </details>
+      <details>
+        <summary><h3>Can I replay story missions?</h3><svg class="chevron"><use href="#i-chev"/></svg></summary>
+        <div class="ts-faq-answer"><p>Every cleared chapter replays at your current squad level, or you can lock the squad back to its original state for the harder version.</p></div>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="screentone">
+  <div>
+    <a class="footer-logo" href="index.html" aria-label="Play Fun home">
+      <span class="logo-mark"><svg><use href="#i-play"/></svg></span>
+      <span class="logo-word">PLAYFUN</span>
+    </a>
+    <p>144 Robinson Road, #12-01 Robinson Square,<br>Singapore 068908</p>
+    <p><a href="mailto:contact@playfun123.com">contact@playfun123.com</a></p>
+    <p class="uen">UEN 202333645R</p>
+    <div class="legal-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="copyright">All rights reserved. © 2023 – Play Fun Pte. Ltd.</p>
+  </div>
+</footer>
+
+<script src="script.js?v=2" defer></script>
+</body>
+</html>
